@@ -83,12 +83,9 @@ Der Schlüssel (z.B. label) wird zum Zitieren verwendet.
 
 ----------------------------------------
 QUELLE IM TEXT ZITIEREN
-!WICHTIG! Das muss in die chapter Dateien.
 ----------------------------------------
 
 \cite{label}
-
-Nur zitierte Quellen erscheinen im Literaturverzeichnis, aber dies dann voll-automatisch.
 
 ----------------------------------------
 Sollten die Quellen auch nach mehrfachem Kompilieren nicht kommen, empfehle ich 
