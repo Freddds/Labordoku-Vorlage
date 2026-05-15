@@ -102,15 +102,14 @@
 %#################################################################
 
 \begin{document}						% XXX
-\cite{label}							% XXX
 \pagestyle{plain}						% XXX
-\pagenumbering{roman}				% XXX
+\pagenumbering{roman}					% XXX
 \input{flyleaf/flyleaf}					% XXX
 \cleardoublepage						% NICHT ÄNDERN!
-\tableofcontents                  				% XXX
-\newpage							% XXX
+\tableofcontents                  		% XXX
+\newpage								% XXX
 \pagestyle{headings}					% XXX
-\pagenumbering{arabic}				% XXX
+\pagenumbering{arabic}					% XXX
 \cleardoublepage						% XXX
 
 %#################################################################
@@ -130,6 +129,7 @@
 %%#################################################################
 %% Appendix
 %%#################################################################
+\nocite{label}			% Hier bitte das Keyword aus der literature.bib eintragen
 \appendix
 \newpage
 \bibliographystyle{plaindin}    
