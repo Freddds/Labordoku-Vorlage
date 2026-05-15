@@ -1,0 +1,154 @@
+%#################################################################
+%%
+%%  LaTeX Template for Documentation
+%%
+%% (c) Hochschule Darmstadt, Fachbereich EIT und Luca Diegel
+%%                   2026
+%#################################################################
+
+
+\documentclass[12pt,                      
+               oneside,
+               a4paper,                   
+               BCOR=1.0cm,                
+               headsepline,               
+               toc = index,               
+               bibliography=totoc,          
+               numbers=noenddot,            
+               ]{scrbook}
+\usepackage{layout} 
+\usepackage{geometry}
+\geometry{
+   left=2.5cm,
+   right=2.5cm,
+	 top=3cm,
+	 bottom=3cm}
+							
+\usepackage{epsfig}		% needed to import eps files
+\usepackage{lipsum}		% needed to generate blindtext
+\usepackage{helvet}		% defines the font
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage[ngerman]{babel}		% defines german as a language
+\usepackage[colorlinks=true, linkcolor=black, urlcolor=blue, citecolor=black]{hyperref}	% for the ToC reference
+\usepackage[all]{hypcap}											% for the ToC reference
+\addto\extrasngerman{                                  	% changes tags to german
+  \def\figureautorefname{Abbildung}		%
+  \def\tableautorefname{Tabelle}			%
+ \def\subsubsectionautorefname{Kapitel}		%
+}
+
+\setlength{\parindent}{0pt}	% gets rid of the par indent
+
+\usepackage{setspace}
+\onehalfspacing			% changes linespacing to 1,5
+
+\usepackage{float}		% force tables and figures
+
+\usepackage{booktabs}		% creates nice tables
+
+\usepackage{listings}		% create a programming language visualization
+\usepackage{xcolor}		% customize the languages colors
+\usepackage{csquotes}    	 % sets with \enquote{xxx} quotation marks
+
+%% Bitte die nachfolgendenden Zeilen einkommentieren und die Programmiersprache eintragen 
+
+%\lstdefinelanguage{Programmiersprache1}{
+ % morekeywords={
+    %Hier kommen Schlüsselwörter der Sprache rein
+ % },
+%  sensitive=false,
+%  morecomment=[l]xxx,		% Die xxx mit dem Kommentarzeichen der Sprache ersetzen
+%  morestring=[b]"
+%}
+
+%\lstdefinelanguage{Programmiersprache2}{
+% morecomment=[l]xxx,		% Die xxx mit dem Kommentarzeichen der Sprache ersetzen
+%  sensitive=false
+%}
+
+%\lstset{						% --- Einstellung der Programmiersprache (Änderungen sind eher kosmetisch, nur der Name 									muss halt geändert werd) ---
+%  language=Programmiersprache,		% Hier den Namen der Sprache eingeben
+%  basicstyle=\ttfamily\small,			% XXX Nicht verändern XXX
+%  keywordstyle=\color{blue},			% Hier ist die Farbe von Code in der Sprache einzustellen
+%  commentstyle=\color{green!60!black},	% Hier ist die Farbe von Kommentaren in der Sprache einzustellen
+%  stringstyle=\color{orange},			% Hier ist die Farbe von Strings in der Sprache einzustellen
+%  numbers=left,					% XXX Nicht verändern XXX
+%  numberstyle=\tiny,				% XXX Nicht verändern XXX
+%  breaklines=true,					% XXX Nicht verändern XXX
+%  frame=single					% XXX Nicht verändern XXX
+%}
+
+\usepackage{needspace}	% Verschiebt Text, Listings und Bilder auf eine neue Seite
+
+\renewcommand{\familydefault}{\sfdefault}
+
+%#################################################################
+% Enter your Personal details here!!
+%#################################################################
+
+\newcommand{\thesis}{Labordokumentation}
+\newcommand{\module}{Modulname}					% Hier kommt der Modulname rein
+\newcommand{\course}{B. Eng. Elektro- und Informationstechnik}
+\newcommand{\writer}{Max Mustermann | 1234567}			% Hier kommt der Name und die Matrikelnummer des ersten Gruppenmitglieds rein
+\newcommand{\cowriterone}{Max Mustermann | 1234567}		% Hier kommt der Name und die Matrikelnummer des zweiten Gruppenmitglieds rein
+\newcommand{\cowritertwo}{Max Mustermann | 1234567}		% Hier kommt der Name und die Matrikelnummer des dritten Gruppenmitglieds rein
+\newcommand{\cowriterthree}{Max Mustermann | 1234567}		% Hier kommt der Name und die Matrikelnummer des vierten Gruppenmitglieds rein
+\newcommand{\completiondate}{01.01.2000}				% Hier kommt das Abgabedatum rein
+\newcommand{\topic}{Versuchsname}					% Hier kommt der Versuchsname rein.
+\newcommand{\supervisor}{Prof. Dr. Platzhalter}				% Hier kommt der Name der Professor*in rein	
+\newcommand{\supervisorsec}{Fr. Platzhalterin}				% Hier kommt der Name der Laboringenieur*in rein
+\newcommand{\public}[0]{}							% XXX NICHT ÄNDERN! XXX
+%#################################################################
+
+\begin{document}						% XXX
+\cite{label}							% XXX
+\pagestyle{plain}						% XXX
+\pagenumbering{roman}				% XXX
+\input{flyleaf/flyleaf}					% XXX
+\cleardoublepage						% NICHT ÄNDERN!
+\tableofcontents                  				% XXX
+\newpage							% XXX
+\pagestyle{headings}					% XXX
+\pagenumbering{arabic}				% XXX
+\cleardoublepage						% XXX
+
+%#################################################################
+%% CHAPTERS				% Bitte die Kommentarzeichen entfernen.
+%#################################################################
+
+%\input{chapters/introduction.tex}
+
+%\input{chapters/chapter1.tex}
+
+%\input{chapters/chapter2.tex}
+
+%\input{chapters/chapter3.tex}
+
+%\input{chapters/resume.tex}
+
+%%#################################################################
+%% Appendix
+%%#################################################################
+\appendix
+\newpage
+\bibliographystyle{plaindin}    
+\bibliography{literature} 
+
+\end{document}
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+	
+
